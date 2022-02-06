@@ -5,10 +5,10 @@ function snapshot_after {
     [String]$CompatibilityModeSO
     )
 
-if(Test-Path -Path "./snapshot_after"){
-    #Write-Host "La carpeta ya existe"
-}else{
-    New-Item -ItemType "directory" -Path "./snapshot_after"
-}
+    if(Test-Path -Path "./snapshot_after"){
+        #Write-Host "La carpeta ya existe"
+    }else{
+        New-Item -ItemType "directory" -Path "./snapshot_after"
+    }
         
 }
